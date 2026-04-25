@@ -171,7 +171,7 @@ export default function MenuExperience({
   };
 
   return (
-    <div className="space-y-12">
+    <div>
       <section className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell">
           <h1 className="font-display text-4xl md:text-5xl">{content.ui.title}</h1>
@@ -262,155 +262,157 @@ export default function MenuExperience({
       </section>
 
       {(seasonalDishes.length > 0 || chefDishes.length > 0) && (
-        <section className="section-pad section-bg-b">
+        <section className="section-pad section-bg-b border-b border-[var(--border)]">
           <div className="container-shell grid gap-6 lg:grid-cols-2">
-          {seasonalDishes.length > 0 && (
-            <article className="glass-card rounded-3xl p-6">
-              <h2 className="font-display text-3xl">{content.ui.specials.title}</h2>
-              <p className="mt-2 text-sm text-[var(--muted)]">{content.ui.specials.subtitle}</p>
-              <div className="mt-5 space-y-3">
-                {seasonalDishes.map((dish) => (
-                  <button
-                    key={dish.id}
-                    type="button"
-                    onClick={() => setSelectedDish(dish)}
-                    className="flex w-full items-center justify-between rounded-xl border border-[var(--border)] px-4 py-3 text-left hover:bg-white/3"
-                  >
-                    <div>
-                      <p className="font-display text-lg">{dish.name}</p>
-                      <p className="text-xs text-[var(--muted)]">{dish.description}</p>
-                    </div>
-                    <p className="text-sm text-[var(--accent)]">{dish.price}</p>
-                  </button>
-                ))}
-              </div>
-            </article>
-          )}
+            {seasonalDishes.length > 0 && (
+              <article className="glass-card rounded-3xl p-6">
+                <h2 className="font-display text-3xl">{content.ui.specials.title}</h2>
+                <p className="mt-2 text-sm text-[var(--muted)]">{content.ui.specials.subtitle}</p>
+                <div className="mt-5 space-y-3">
+                  {seasonalDishes.map((dish) => (
+                    <button
+                      key={dish.id}
+                      type="button"
+                      onClick={() => setSelectedDish(dish)}
+                      className="flex w-full items-center justify-between rounded-xl border border-[var(--border)] px-4 py-3 text-left hover:bg-white/3"
+                    >
+                      <div>
+                        <p className="font-display text-lg">{dish.name}</p>
+                        <p className="text-xs text-[var(--muted)]">{dish.description}</p>
+                      </div>
+                      <p className="text-sm text-[var(--accent)]">{dish.price}</p>
+                    </button>
+                  ))}
+                </div>
+              </article>
+            )}
 
-          {chefDishes.length > 0 && (
-            <article className="glass-card rounded-3xl p-6">
-              <h2 className="font-display text-3xl">{content.ui.chefPicks.title}</h2>
-              <p className="mt-2 text-sm text-[var(--muted)]">{content.ui.chefPicks.subtitle}</p>
-              <div className="mt-5 space-y-3">
-                {chefDishes.map((dish) => (
-                  <button
-                    key={dish.id}
-                    type="button"
-                    onClick={() => setSelectedDish(dish)}
-                    className="flex w-full items-center justify-between rounded-xl border border-[var(--border)] px-4 py-3 text-left hover:bg-white/3"
-                  >
-                    <div>
-                      <p className="font-display text-lg">{dish.name}</p>
-                      <p className="text-xs text-[var(--muted)]">{dish.description}</p>
-                    </div>
-                    <p className="text-sm text-[var(--accent)]">{dish.price}</p>
-                  </button>
-                ))}
-              </div>
-            </article>
-          )}
+            {chefDishes.length > 0 && (
+              <article className="glass-card rounded-3xl p-6">
+                <h2 className="font-display text-3xl">{content.ui.chefPicks.title}</h2>
+                <p className="mt-2 text-sm text-[var(--muted)]">{content.ui.chefPicks.subtitle}</p>
+                <div className="mt-5 space-y-3">
+                  {chefDishes.map((dish) => (
+                    <button
+                      key={dish.id}
+                      type="button"
+                      onClick={() => setSelectedDish(dish)}
+                      className="flex w-full items-center justify-between rounded-xl border border-[var(--border)] px-4 py-3 text-left hover:bg-white/3"
+                    >
+                      <div>
+                        <p className="font-display text-lg">{dish.name}</p>
+                        <p className="text-xs text-[var(--muted)]">{dish.description}</p>
+                      </div>
+                      <p className="text-sm text-[var(--accent)]">{dish.price}</p>
+                    </button>
+                  ))}
+                </div>
+              </article>
+            )}
           </div>
         </section>
       )}
 
-      <div className="container-shell sticky top-20 z-20">
-        <div className="glass-card rounded-2xl p-2">
-          <div className="flex gap-2 overflow-x-auto">
-            {categoryMap
-              .filter((entry) => entry.dishes.length > 0)
-              .map((entry) => (
-                <button
-                  key={entry.category}
-                  type="button"
-                  onClick={() => scrollToCategory(entry.category)}
-                  className={`whitespace-nowrap rounded-xl px-4 py-2 text-sm transition ${
-                    activeCategory === entry.category
-                      ? "bg-[var(--accent)] text-[#122019]"
-                      : "text-[var(--muted)] hover:text-[var(--foreground)]"
-                  }`}
-                >
-                  {content.ui.categories[entry.category]}
-                </button>
-              ))}
+      <section className="section-bg-c">
+        <div className="container-shell sticky top-20 z-20 py-4">
+          <div className="glass-card rounded-2xl p-2">
+            <div className="flex gap-2 overflow-x-auto">
+              {categoryMap
+                .filter((entry) => entry.dishes.length > 0)
+                .map((entry) => (
+                  <button
+                    key={entry.category}
+                    type="button"
+                    onClick={() => scrollToCategory(entry.category)}
+                    className={`whitespace-nowrap rounded-xl px-4 py-2 text-sm transition ${
+                      activeCategory === entry.category
+                        ? "bg-[var(--accent)] text-[#122019]"
+                        : "text-[var(--muted)] hover:text-[var(--foreground)]"
+                    }`}
+                  >
+                    {content.ui.categories[entry.category]}
+                  </button>
+                ))}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="section-pad section-bg-c">
+      <section className="section-pad section-bg-c pt-6">
         <div className="container-shell space-y-10 pb-4">
-        {categoryMap.every((entry) => entry.dishes.length === 0) && (
-          <div className="glass-card rounded-2xl p-8 text-center text-[var(--muted)]">
-            {content.ui.noResults}
-          </div>
-        )}
+          {categoryMap.every((entry) => entry.dishes.length === 0) && (
+            <div className="glass-card rounded-2xl p-8 text-center text-[var(--muted)]">
+              {content.ui.noResults}
+            </div>
+          )}
 
-        {categoryMap
-          .filter((entry) => entry.dishes.length > 0)
-          .map((entry) => (
-            <section
-              key={entry.category}
-              id={`${locale}-${entry.category}`}
-              data-category={entry.category}
-              ref={(node) => {
-                sectionRefs.current[entry.category] = node;
-              }}
-              className="scroll-mt-36"
-            >
-              <h2 className="font-display text-3xl md:text-4xl">
-                {content.ui.categories[entry.category]}
-              </h2>
-              <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {entry.dishes.map((dish) => (
-                  <article key={dish.id} className="glass-card group overflow-hidden rounded-2xl">
-                    <button type="button" className="w-full text-left" onClick={() => setSelectedDish(dish)}>
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <div
-                          className="h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-110"
-                          style={{ backgroundImage: `url('${dish.image}')` }}
-                        />
-                      </div>
-
-                      <div className="p-5">
-                        <div className="mb-2 flex items-start justify-between gap-3">
-                          <h3 className="font-display text-2xl leading-tight">{dish.name}</h3>
-                          <p className="text-sm font-semibold text-[var(--accent)]">{dish.price}</p>
-                        </div>
-                        <p className="text-sm leading-relaxed text-[var(--muted)]">{dish.description}</p>
-
-                        <div className="mt-4 flex flex-wrap gap-2">
-                          {dish.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="rounded-full border border-[var(--border)] px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]"
-                            >
-                              {content.ui.tags[tag]}
-                            </span>
-                          ))}
+          {categoryMap
+            .filter((entry) => entry.dishes.length > 0)
+            .map((entry) => (
+              <section
+                key={entry.category}
+                id={`${locale}-${entry.category}`}
+                data-category={entry.category}
+                ref={(node) => {
+                  sectionRefs.current[entry.category] = node;
+                }}
+                className="scroll-mt-36"
+              >
+                <h2 className="font-display text-3xl md:text-4xl">
+                  {content.ui.categories[entry.category]}
+                </h2>
+                <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  {entry.dishes.map((dish) => (
+                    <article key={dish.id} className="glass-card group overflow-hidden rounded-2xl">
+                      <button type="button" className="w-full text-left" onClick={() => setSelectedDish(dish)}>
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <div
+                            className="h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                            style={{ backgroundImage: `url('${dish.image}')` }}
+                          />
                         </div>
 
-                        {showNutrition && (
-                          <div className="mt-4 rounded-xl border border-[var(--border)] p-3">
-                            <p className="text-xs text-[var(--muted)]">
-                              {dish.calories} {content.ui.nutrition.kcal}
-                            </p>
-                            <div className="mt-1 grid grid-cols-3 gap-2">
-                              <NutritionLine label={content.ui.nutrition.protein} value={dish.macros.protein} />
-                              <NutritionLine label={content.ui.nutrition.fat} value={dish.macros.fat} />
-                              <NutritionLine label={content.ui.nutrition.carbs} value={dish.macros.carbs} />
-                            </div>
+                        <div className="p-5">
+                          <div className="mb-2 flex items-start justify-between gap-3">
+                            <h3 className="font-display text-2xl leading-tight">{dish.name}</h3>
+                            <p className="text-sm font-semibold text-[var(--accent)]">{dish.price}</p>
                           </div>
-                        )}
+                          <p className="text-sm leading-relaxed text-[var(--muted)]">{dish.description}</p>
 
-                        <span className="gold-link mt-4 inline-block text-sm">
-                          {content.ui.details.view}
-                        </span>
-                      </div>
-                    </button>
-                  </article>
-                ))}
-              </div>
-            </section>
-          ))}
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {dish.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="rounded-full border border-[var(--border)] px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]"
+                              >
+                                {content.ui.tags[tag]}
+                              </span>
+                            ))}
+                          </div>
+
+                          {showNutrition && (
+                            <div className="mt-4 rounded-xl border border-[var(--border)] p-3">
+                              <p className="text-xs text-[var(--muted)]">
+                                {dish.calories} {content.ui.nutrition.kcal}
+                              </p>
+                              <div className="mt-1 grid grid-cols-3 gap-2">
+                                <NutritionLine label={content.ui.nutrition.protein} value={dish.macros.protein} />
+                                <NutritionLine label={content.ui.nutrition.fat} value={dish.macros.fat} />
+                                <NutritionLine label={content.ui.nutrition.carbs} value={dish.macros.carbs} />
+                              </div>
+                            </div>
+                          )}
+
+                          <span className="gold-link mt-4 inline-block text-sm">
+                            {content.ui.details.view}
+                          </span>
+                        </div>
+                      </button>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
         </div>
       </section>
 
