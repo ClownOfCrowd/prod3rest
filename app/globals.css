@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f151a;
+  --surface: #141d23;
+  --surface-2: #1a242b;
+  --foreground: #f2eee6;
+  --muted: #b7c0bf;
+  --accent: #89b49b;
+  --accent-soft: #4f6a5c;
+  --border: rgba(137, 180, 155, 0.24);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 15% -10%, rgba(137, 180, 155, 0.13), transparent 38%),
+    radial-gradient(circle at 84% 2%, rgba(94, 145, 175, 0.1), transparent 42%),
+    linear-gradient(180deg, #0f151a 0%, #111a20 45%, #0f151a 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-playfair), serif;
+}
+
+::selection {
+  background: rgba(137, 180, 155, 0.34);
+  color: #fffaf0;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+}
+
+.section-pad {
+  @apply py-16 md:py-24;
+}
+
+.glass-card {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.015)
+  );
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.gold-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.gold-link:hover {
+  color: #b5d9c4;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition;
+  background: linear-gradient(145deg, #9cc9b0 0%, #79a891 100%);
+  color: #102018;
+  box-shadow: 0 12px 28px rgba(121, 168, 145, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold tracking-wide transition;
+  border-color: var(--border);
+  color: var(--foreground);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(137, 180, 155, 0.45);
+  color: #fffaf0;
+}
+
+.nav-link {
+  @apply text-sm leading-none tracking-wide whitespace-nowrap transition;
+}
+
+@keyframes galleryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,0 +1,194 @@
+{
+  "brand": "Aurelien",
+  "localeLabel": "Language",
+  "locales": {
+    "en": "EN",
+    "es": "ES",
+    "ru": "RU"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "chef": "Chef",
+    "gallery": "Gallery",
+    "reservations": "Reservations",
+    "contact": "Contact",
+    "menuButton": "Menu",
+    "toggleNavigation": "Toggle navigation"
+  },
+  "common": {
+    "reserveNow": "Reserve a table",
+    "exploreMenu": "Explore menu",
+    "openingHours": "Tue - Sun, 17:30 - 23:30",
+    "address": "14 Mariner Lane, Old Harbour District",
+    "phone": "+1 (212) 555-0199",
+    "email": "hello@aurelien-restaurant.com",
+    "ctaTitle": "An evening built around detail",
+    "ctaText": "Reserve now and let our team craft a table experience around your pace, preferences, and the season's best ingredients."
+  },
+  "home": {
+    "eyebrow": "Contemporary European Dining",
+    "title": "Light, fire, and precision on every plate",
+    "subtitle": "Aurelien is a modern European restaurant where seasonal produce meets quiet theatricality. Every course is paced for conversation, depth, and memory.",
+    "heroPrimary": "Book your evening",
+    "heroSecondary": "View tasting menu",
+    "highlights": [
+      {
+        "title": "Seasonal tasting",
+        "text": "A six-course journey that evolves every six weeks."
+      },
+      {
+        "title": "Open flame kitchen",
+        "text": "Live charcoal techniques with clean, elegant finishes."
+      },
+      {
+        "title": "Curated cellar",
+        "text": "European wines selected for balance, not volume."
+      }
+    ],
+    "testimonialTitle": "Guests return for the calm confidence",
+    "testimonials": [
+      {
+        "quote": "The service felt intuitive and never intrusive. Every course had a clear story.",
+        "author": "Elena Morris"
+      },
+      {
+        "quote": "A rare balance between creativity and comfort. The pacing of dinner was flawless.",
+        "author": "Daniel Park"
+      },
+      {
+        "quote": "One of the most coherent tasting menus in the city right now.",
+        "author": "Nina Alvarez"
+      }
+    ]
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Minimal on paper, layered on the palate. Built around peak ingredients and careful restraint.",
+    "categories": [
+      {
+        "title": "Small Plates",
+        "description": "Opening notes with bright acidity and gentle smoke.",
+        "items": [
+          {
+            "name": "Cured Sea Bass",
+            "description": "Yuzu, fennel, and white grape oil",
+            "price": "$24"
+          },
+          {
+            "name": "Burnt Leek Tart",
+            "description": "Comte, black pepper, and confit onion",
+            "price": "$19"
+          },
+          {
+            "name": "Veal Sweetbread",
+            "description": "Madeira glaze and pickled chanterelles",
+            "price": "$26"
+          }
+        ]
+      },
+      {
+        "title": "Mains",
+        "description": "Structured dishes with precise textures and deep reduction sauces.",
+        "items": [
+          {
+            "name": "Atlantic Turbot",
+            "description": "Smoked beurre blanc and celeriac",
+            "price": "$42"
+          },
+          {
+            "name": "Aged Duck Breast",
+            "description": "Cherry jus and charred endive",
+            "price": "$46"
+          },
+          {
+            "name": "Mushroom Pithivier",
+            "description": "Truffle emulsion and winter herbs",
+            "price": "$34"
+          }
+        ]
+      },
+      {
+        "title": "Desserts",
+        "description": "Low sugar, high expression; elegant endings.",
+        "items": [
+          {
+            "name": "Olive Oil Cake",
+            "description": "Blood orange and vanilla cream",
+            "price": "$14"
+          },
+          {
+            "name": "Dark Chocolate Gateau",
+            "description": "Sea salt caramel and hazelnut praline",
+            "price": "$16"
+          },
+          {
+            "name": "Seasonal Sorbet Trio",
+            "description": "Three fruit expressions of the week",
+            "price": "$13"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About Aurelien",
+    "principlesTitle": "Principles",
+    "lead": "We opened with a simple intention: make fine dining feel focused, warm, and grounded in the season.",
+    "body": "Our dining room is built on contrast: soft light, dark textures, restrained details. The kitchen works closely with coastal growers, heritage farms, and artisan producers to keep every menu iteration honest and alive.",
+    "values": [
+      "Ingredient-first sourcing from trusted regional partners",
+      "Service that reads the room and adapts naturally",
+      "A calm rhythm that lets each course land with purpose"
+    ]
+  },
+  "chef": {
+    "title": "Chef Adrien Voss",
+    "subtitle": "Classically trained, seasonally obsessed",
+    "bio": "After leading kitchens in Lyon and Copenhagen, Adrien returned to build a dining concept centered on modern European flavor architecture. His approach is technical but never heavy, blending open-fire methods with bright, clean finishes.",
+    "quote": "Luxury is not excess. Luxury is clarity, timing, and trust in every ingredient."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A glimpse of atmosphere, craft, and late-night glow.",
+    "items": [
+      "Open flame pass during evening service",
+      "Stoneware plating with seasonal greens",
+      "Dining room just before first seating",
+      "Chef's table with final garnish sequence",
+      "Cellar corner and pairing station",
+      "Night facade on Mariner Lane"
+    ]
+  },
+  "reservations": {
+    "title": "Reservations",
+    "subtitle": "Secure your table in under a minute.",
+    "form": {
+      "date": "Date",
+      "time": "Time",
+      "guests": "Guests",
+      "submit": "Confirm reservation",
+      "successTitle": "Reservation request received",
+      "successText": "Thank you. Our host team will contact you shortly to confirm details."
+    },
+    "helper": "For groups above 8 guests, please contact us directly."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Questions, private dining, or special accommodations.",
+    "hoursTitle": "Opening hours",
+    "reachTitle": "Reach us",
+    "privateNote": "Private dining and special requests are confirmed within 24 hours."
+  },
+  "footer": {
+    "tagline": "Contemporary European dining in the Old Harbour District.",
+    "copyright": "All rights reserved."
+  },
+  "cookie": {
+    "title": "Cookie preferences",
+    "text": "We use cookies to improve navigation, analytics, and reservation flow comfort.",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}

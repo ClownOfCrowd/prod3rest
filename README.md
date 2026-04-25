@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurelien Restaurant Website
 
-## Getting Started
+Production-ready portfolio website concept for a premium restaurant, built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+This project focuses on realistic restaurant UX, multilingual content, and a polished reservation journey. The interface is cinematic and atmospheric, but still practical for daily use.
+
+## What is inside
+
+- Full website structure with core pages:
+	- Home
+	- Menu
+	- About
+	- Chef
+	- Gallery
+	- Reservations
+	- Contact
+- Deep multilingual support:
+	- English
+	- Spanish
+	- Russian
+- Extended interactive menu experience:
+	- Rich dish data (ingredients, allergens, calories, macros, tags)
+	- Filters and service toggle (Lunch / Dinner)
+	- Dish detail modal
+	- Seasonal specials, chef picks, wine pairing
+- Enhanced homepage storytelling:
+	- Philosophy and sourcing
+	- Chef story and dining experience
+	- Private events and gift cards
+	- Gallery split by mood
+	- Location and opening-hours intelligence (today + open/closed)
+	- FAQ and micro-sections
+- Reservation UX improvements:
+	- Sticky mobile reserve action
+	- Floating reserve button (desktop)
+	- Fast reservation modal with improved success state
+	- Quick prefill from popular time slots
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion (light usage)
+- JSON/TS-based i18n content architecture
+
+## Local development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Quality checks
 
-## Learn More
+Lint:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Production build:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+## Project notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Design system is intentionally consistent across pages and was preserved while expanding content and UX.
+- Menu module is isolated and reusable, so new dishes/categories can be extended without rewriting UI.
+- Content is written to feel realistic and brand-consistent for a premium restaurant concept.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Repository
+
+Target repository URL:
+
+https://github.com/ClownOfCrowd/prod3rest

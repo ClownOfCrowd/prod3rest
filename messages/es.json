@@ -1,0 +1,194 @@
+{
+  "brand": "Aurelien",
+  "localeLabel": "Idioma",
+  "locales": {
+    "en": "EN",
+    "es": "ES",
+    "ru": "RU"
+  },
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "about": "Nosotros",
+    "chef": "Chef",
+    "gallery": "Galería",
+    "reservations": "Reservas",
+    "contact": "Contacto",
+    "menuButton": "Menú",
+    "toggleNavigation": "Alternar navegación"
+  },
+  "common": {
+    "reserveNow": "Reservar mesa",
+    "exploreMenu": "Ver menú",
+    "openingHours": "Mar - Dom, 17:30 - 23:30",
+    "address": "14 Mariner Lane, distrito Old Harbour",
+    "phone": "+1 (212) 555-0199",
+    "email": "hello@aurelien-restaurant.com",
+    "ctaTitle": "Una noche diseñada al detalle",
+    "ctaText": "Reserva ahora y nuestro equipo preparará una experiencia de mesa según tu ritmo, tus preferencias y los mejores ingredientes de temporada."
+  },
+  "home": {
+    "eyebrow": "Cocina europea contemporánea",
+    "title": "Luz, fuego y precisión en cada plato",
+    "subtitle": "Aurelien es un restaurante europeo moderno donde el producto estacional se une a una teatralidad discreta. Cada pase está pensado para conversación, profundidad y recuerdo.",
+    "heroPrimary": "Reserva tu noche",
+    "heroSecondary": "Ver menú degustación",
+    "highlights": [
+      {
+        "title": "Degustación estacional",
+        "text": "Un recorrido de seis tiempos que evoluciona cada seis semanas."
+      },
+      {
+        "title": "Cocina a fuego abierto",
+        "text": "Técnicas con carbón en vivo y acabados limpios y elegantes."
+      },
+      {
+        "title": "Bodega curada",
+        "text": "Vinos europeos seleccionados por equilibrio, no por volumen."
+      }
+    ],
+    "testimonialTitle": "Los invitados vuelven por la serenidad del servicio",
+    "testimonials": [
+      {
+        "quote": "El servicio fue intuitivo y nunca invasivo. Cada plato tenía una historia clara.",
+        "author": "Elena Morris"
+      },
+      {
+        "quote": "Un equilibrio poco común entre creatividad y confort. El ritmo de la cena fue impecable.",
+        "author": "Daniel Park"
+      },
+      {
+        "quote": "Uno de los menús degustación más coherentes de la ciudad.",
+        "author": "Nina Alvarez"
+      }
+    ]
+  },
+  "menu": {
+    "title": "Menú",
+    "subtitle": "Mínimo en papel, complejo en boca. Construido con producto en su punto y precisión.",
+    "categories": [
+      {
+        "title": "Entrantes",
+        "description": "Primeras notas con acidez brillante y humo delicado.",
+        "items": [
+          {
+            "name": "Lubina curada",
+            "description": "Yuzu, hinojo y aceite de uva blanca",
+            "price": "$24"
+          },
+          {
+            "name": "Tarta de puerro braseado",
+            "description": "Comte, pimienta negra y cebolla confitada",
+            "price": "$19"
+          },
+          {
+            "name": "Molleja de ternera",
+            "description": "Glaseado de Madeira y chantarelas encurtidas",
+            "price": "$26"
+          }
+        ]
+      },
+      {
+        "title": "Principales",
+        "description": "Platos estructurados con texturas precisas y salsas profundas.",
+        "items": [
+          {
+            "name": "Rodaballo atlántico",
+            "description": "Beurre blanc ahumado y apionabo",
+            "price": "$42"
+          },
+          {
+            "name": "Pechuga de pato madurada",
+            "description": "Jus de cereza y endivia a la brasa",
+            "price": "$46"
+          },
+          {
+            "name": "Pithivier de setas",
+            "description": "Emulsión de trufa y hierbas de invierno",
+            "price": "$34"
+          }
+        ]
+      },
+      {
+        "title": "Postres",
+        "description": "Poco azúcar, máxima expresión; finales elegantes.",
+        "items": [
+          {
+            "name": "Bizcocho de aceite de oliva",
+            "description": "Naranja sanguina y crema de vainilla",
+            "price": "$14"
+          },
+          {
+            "name": "Gateau de chocolate negro",
+            "description": "Caramelo salado y praliné de avellana",
+            "price": "$16"
+          },
+          {
+            "name": "Trío de sorbetes de temporada",
+            "description": "Tres frutas destacadas de la semana",
+            "price": "$13"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Aurelien",
+    "principlesTitle": "Principios",
+    "lead": "Abrimos con una intención clara: que la alta cocina se sienta precisa, cálida y conectada con la temporada.",
+    "body": "Nuestro comedor vive del contraste: luz suave, texturas oscuras y detalles contenidos. La cocina trabaja con productores costeros, granjas de herencia y artesanos para que cada versión del menú sea honesta y viva.",
+    "values": [
+      "Producto como punto de partida, con aliados regionales de confianza",
+      "Servicio que lee la sala y se adapta de forma natural",
+      "Un ritmo sereno para que cada pase tenga intención"
+    ]
+  },
+  "chef": {
+    "title": "Chef Adrien Voss",
+    "subtitle": "Formación clásica, obsesión estacional",
+    "bio": "Tras liderar cocinas en Lyon y Copenhague, Adrien regresó para crear un concepto centrado en arquitectura de sabor europea contemporánea. Su enfoque es técnico pero ligero, combinando fuego abierto con finales limpios y vivos.",
+    "quote": "El lujo no es exceso. El lujo es claridad, tiempo y confianza en cada ingrediente."
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Un vistazo a la atmósfera, el oficio y el brillo nocturno.",
+    "items": [
+      "Pase de fuego abierto durante el servicio",
+      "Emplatado en cerámica con hojas de temporada",
+      "Comedor instantes antes del primer turno",
+      "Mesa del chef en la secuencia final",
+      "Rincón de bodega y estación de maridaje",
+      "Fachada nocturna en Mariner Lane"
+    ]
+  },
+  "reservations": {
+    "title": "Reservas",
+    "subtitle": "Asegura tu mesa en menos de un minuto.",
+    "form": {
+      "date": "Fecha",
+      "time": "Hora",
+      "guests": "Comensales",
+      "submit": "Confirmar reserva",
+      "successTitle": "Solicitud de reserva recibida",
+      "successText": "Gracias. Nuestro equipo de sala te contactará en breve para confirmar los detalles."
+    },
+    "helper": "Para grupos de más de 8 personas, contáctanos directamente."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Consultas, eventos privados o necesidades especiales.",
+    "hoursTitle": "Horario",
+    "reachTitle": "Contáctanos",
+    "privateNote": "La cena privada y las solicitudes especiales se confirman en un plazo de 24 horas."
+  },
+  "footer": {
+    "tagline": "Cocina europea contemporánea en el distrito Old Harbour.",
+    "copyright": "Todos los derechos reservados."
+  },
+  "cookie": {
+    "title": "Preferencias de cookies",
+    "text": "Usamos cookies para mejorar la navegación, la analítica y la comodidad en la reserva.",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
+  }
+}
