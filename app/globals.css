@@ -22,13 +22,29 @@
   --font-sans: var(--font-inter);
 }
 
+html {
+  min-height: 100%;
+  background-color: var(--background);
+  overscroll-behavior-y: none;
+}
+
 body {
+  min-height: 100dvh;
   background:
     radial-gradient(circle at 15% -10%, rgba(137, 180, 155, 0.13), transparent 38%),
     radial-gradient(circle at 84% 2%, rgba(94, 145, 175, 0.1), transparent 42%),
     linear-gradient(180deg, #0f151a 0%, #111a20 45%, #0f151a 100%);
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
+@supports (-webkit-touch-callout: none) {
+  html,
+  body {
+    min-height: -webkit-fill-available;
+  }
 }
 
 h1,

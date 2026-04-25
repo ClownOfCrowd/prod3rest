@@ -26,7 +26,7 @@ export default async function LocaleLayout({
   const homeContent = getHomeExperienceContent(lang);
 
   return (
-    <div className="min-h-screen bg-transparent">
+    <div className="min-h-dvh bg-transparent">
       <Navbar locale={lang} dict={dict} />
       <main>{children}</main>
       <Footer locale={lang} dict={dict} />
