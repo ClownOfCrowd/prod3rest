@@ -93,6 +93,10 @@ h4,
   @apply text-sm leading-none tracking-wide whitespace-nowrap transition;
 }
 
+body.mobile-menu-open .sticky-reserve-mobile {
+  display: none;
+}
+
 @keyframes galleryCardIn {
   from {
     opacity: 0;

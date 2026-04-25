@@ -29,15 +29,20 @@ export default function Navbar({
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    const body = document.body;
+
     if (!open) {
+      body.classList.remove("mobile-menu-open");
       return;
     }
 
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    const previous = body.style.overflow;
+    body.style.overflow = "hidden";
+    body.classList.add("mobile-menu-open");
 
     return () => {
-      document.body.style.overflow = previous;
+      body.style.overflow = previous;
+      body.classList.remove("mobile-menu-open");
     };
   }, [open]);
 
@@ -70,6 +75,14 @@ export default function Navbar({
           })}
         </nav>
 
+        <div className="hidden items-center md:flex xl:hidden">
+          <LanguageSwitcher
+            currentLocale={locale}
+            labels={dict.locales}
+            ariaLabel={dict.localeLabel}
+          />
+        </div>
+
         <div className="hidden items-center gap-3 xl:flex">
           <LanguageSwitcher
             currentLocale={locale}
@@ -93,7 +106,7 @@ export default function Navbar({
       </div>
 
       {open && (
-        <div className="container-shell max-h-[calc(100vh-5rem)] overflow-y-auto pb-5 xl:hidden">
+        <div className="container-shell max-h-[calc(100vh-5rem)] overflow-y-auto pb-24 md:pb-5 xl:hidden">
           <nav className="grid gap-3" aria-label="Mobile navigation">
             {links.map((link) => (
               <Link
@@ -106,7 +119,7 @@ export default function Navbar({
               </Link>
             ))}
           </nav>
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between md:hidden">
             <LanguageSwitcher
               currentLocale={locale}
               labels={dict.locales}
