@@ -172,7 +172,7 @@ export default function MenuExperience({
 
   return (
     <div className="space-y-12">
-      <section className="section-pad border-b border-[var(--border)]">
+      <section className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell">
           <h1 className="font-display text-4xl md:text-5xl">{content.ui.title}</h1>
           <p className="mt-4 max-w-4xl text-[var(--muted)]">{content.ui.subtitle}</p>
@@ -262,7 +262,8 @@ export default function MenuExperience({
       </section>
 
       {(seasonalDishes.length > 0 || chefDishes.length > 0) && (
-        <section className="container-shell grid gap-6 lg:grid-cols-2">
+        <section className="section-pad section-bg-b">
+          <div className="container-shell grid gap-6 lg:grid-cols-2">
           {seasonalDishes.length > 0 && (
             <article className="glass-card rounded-3xl p-6">
               <h2 className="font-display text-3xl">{content.ui.specials.title}</h2>
@@ -308,6 +309,7 @@ export default function MenuExperience({
               </div>
             </article>
           )}
+          </div>
         </section>
       )}
 
@@ -334,7 +336,8 @@ export default function MenuExperience({
         </div>
       </div>
 
-      <section className="container-shell space-y-10 pb-4">
+      <section className="section-pad section-bg-c">
+        <div className="container-shell space-y-10 pb-4">
         {categoryMap.every((entry) => entry.dishes.length === 0) && (
           <div className="glass-card rounded-2xl p-8 text-center text-[var(--muted)]">
             {content.ui.noResults}
@@ -408,10 +411,11 @@ export default function MenuExperience({
               </div>
             </section>
           ))}
+        </div>
       </section>
 
       {pairings.length > 0 && (
-        <section className="section-pad border-t border-[var(--border)] bg-[#11191f]/60">
+        <section className="section-pad section-bg-d border-t border-[var(--border)]">
           <div className="container-shell">
             <h2 className="font-display text-3xl md:text-4xl">{content.ui.pairings.title}</h2>
             <p className="mt-3 text-[var(--muted)]">{content.ui.pairings.subtitle}</p>

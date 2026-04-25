@@ -27,7 +27,7 @@ export default function Hero({
   quickLinks?: Array<{ label: string; href: string }>;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-[var(--border)]">
+    <section className="section-bg-hero relative overflow-hidden border-b border-[var(--border)]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

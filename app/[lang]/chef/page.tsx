@@ -18,7 +18,7 @@ export default async function ChefPage({ params }: PageProps<"/[lang]/chef">) {
 
   return (
     <>
-      <section className="section-pad">
+      <section className="section-pad section-bg-a">
         <div className="container-shell grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <Reveal>
             <div>
@@ -45,7 +45,7 @@ export default async function ChefPage({ params }: PageProps<"/[lang]/chef">) {
         </div>
       </section>
 
-      <section className="section-pad border-y border-[var(--border)] bg-[#101820]/50">
+      <section className="section-pad section-bg-c border-y border-[var(--border)]">
         <div className="container-shell grid gap-4 md:grid-cols-3">
           {homeExperience.diningExperience.cards.map((card, index) => (
             <Reveal key={card.title} delay={index * 90}>
@@ -58,7 +58,7 @@ export default async function ChefPage({ params }: PageProps<"/[lang]/chef">) {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell max-w-4xl">
           <article className="glass-card rounded-3xl p-7">
             <h2 className="font-display text-3xl">{homeExperience.chefStory.styleTitle}</h2>

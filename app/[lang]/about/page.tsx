@@ -20,7 +20,7 @@ export default async function AboutPage({
 
   return (
     <>
-      <section className="section-pad border-b border-[var(--border)]">
+      <section className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell max-w-4xl">
           <h1 className="font-display text-4xl md:text-5xl">{dict.about.title}</h1>
           <p className="mt-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -30,7 +30,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell max-w-4xl">
           <Reveal>
             <div className="glass-card rounded-3xl p-8">
@@ -47,7 +47,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="section-pad border-y border-[var(--border)] bg-[#10181e]/45">
+      <section className="section-pad section-bg-c border-y border-[var(--border)]">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <Reveal>
             <article className="glass-card rounded-3xl p-7">

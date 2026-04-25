@@ -14,7 +14,7 @@ export default function SectionCta({
   buttonLabel: string;
 }) {
   return (
-    <section className="section-pad">
+    <section className="section-pad section-bg-d border-t border-[var(--border)]">
       <div className="container-shell">
         <div className="glass-card rounded-3xl p-8 md:p-12">
           <div className="mx-auto max-w-3xl text-center">

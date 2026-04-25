@@ -55,11 +55,11 @@ export default function OpeningHoursPanel({ content }: { content: OpeningHours }
   const isOpen = hasServiceNow(todayHours, nowMinutes);
 
   return (
-    <article className="glass-card rounded-3xl p-6">
-      <div className="flex items-center justify-between gap-3">
-        <h3 className="font-display text-3xl">{content.title}</h3>
+    <article className="glass-card rounded-3xl p-5 sm:p-6">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+        <h3 className="font-display text-2xl sm:text-3xl">{content.title}</h3>
         <span
-          className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] ${
+          className={`self-start rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] sm:self-auto sm:tracking-[0.15em] ${
             isOpen
               ? "bg-[var(--accent)]/25 text-[var(--accent)]"
               : "border border-[var(--border)] text-[var(--muted)]"
@@ -75,17 +75,19 @@ export default function OpeningHoursPanel({ content }: { content: OpeningHours }
           return (
             <li
               key={slot.day}
-              className={`flex items-center justify-between rounded-xl px-3 py-2 ${
+              className={`grid gap-1 rounded-xl px-3 py-2 md:grid-cols-[minmax(0,1fr)_auto] md:items-center ${
                 isToday ? "border border-[var(--border)] bg-white/3" : ""
               }`}
             >
-              <span className="text-[var(--foreground)]">{slot.day}</span>
-              <span className="text-[var(--muted)]">{slot.hours}</span>
-              {isToday && (
-                <span className="ml-3 text-[10px] uppercase tracking-[0.13em] text-[var(--accent)]">
-                  {content.today}
-                </span>
-              )}
+              <div className="flex min-w-0 flex-wrap items-center gap-2">
+                <span className="text-[var(--foreground)]">{slot.day}</span>
+                {isToday && (
+                  <span className="rounded-full border border-[var(--accent)]/35 px-2 py-0.5 text-[10px] uppercase tracking-[0.08em] text-[var(--accent)]">
+                    {content.today}
+                  </span>
+                )}
+              </div>
+              <span className="break-words text-[var(--muted)] md:text-right">{slot.hours}</span>
             </li>
           );
         })}

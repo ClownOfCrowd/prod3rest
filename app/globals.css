@@ -9,6 +9,11 @@
   --accent: #89b49b;
   --accent-soft: #4f6a5c;
   --border: rgba(137, 180, 155, 0.24);
+  --section-hero: linear-gradient(180deg, rgba(13, 19, 24, 0.82), rgba(13, 19, 24, 0.82));
+  --section-a: linear-gradient(180deg, rgba(16, 23, 29, 0.78), rgba(15, 22, 28, 0.78));
+  --section-b: linear-gradient(180deg, rgba(18, 27, 34, 0.78), rgba(16, 24, 31, 0.78));
+  --section-c: linear-gradient(180deg, rgba(20, 29, 36, 0.76), rgba(17, 26, 33, 0.76));
+  --section-d: linear-gradient(180deg, rgba(15, 21, 27, 0.8), rgba(14, 20, 26, 0.8));
 }
 
 @theme inline {
@@ -45,6 +50,26 @@ h4,
 
 .section-pad {
   @apply py-16 md:py-24;
+}
+
+.section-bg-hero {
+  background: var(--section-hero);
+}
+
+.section-bg-a {
+  background: var(--section-a);
+}
+
+.section-bg-b {
+  background: var(--section-b);
+}
+
+.section-bg-c {
+  background: var(--section-c);
+}
+
+.section-bg-d {
+  background: var(--section-d);
 }
 
 .glass-card {

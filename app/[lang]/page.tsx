@@ -45,7 +45,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         }))}
       />
 
-      <section id="home-story" className="section-pad border-b border-[var(--border)]">
+      <section id="home-story" className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell grid gap-6 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <article className="glass-card rounded-3xl p-7 md:p-9">
@@ -73,7 +73,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <Reveal>
             <article className="glass-card rounded-3xl p-7">
@@ -107,7 +107,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-a">
         <div className="container-shell grid gap-5 md:grid-cols-3">
           {dict.home.highlights.map((item, index) => (
             <Reveal key={item.title} delay={index * 120}>
@@ -122,7 +122,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad border-y border-[var(--border)] bg-[#0f0f12]">
+      <section className="section-pad section-bg-c border-y border-[var(--border)]">
         <div className="container-shell">
           <Reveal>
             <h2 className="font-display text-3xl md:text-4xl">
@@ -146,7 +146,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section id="home-experience" className="section-pad">
+      <section id="home-experience" className="section-pad section-bg-b">
         <div className="container-shell">
           <h2 className="font-display text-3xl md:text-4xl">
             {homeExperience.diningExperience.title}
@@ -164,7 +164,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad border-y border-[var(--border)] bg-[#10181f]/55">
+      <section className="section-pad section-bg-d border-y border-[var(--border)]">
         <div className="container-shell grid gap-6 lg:grid-cols-3">
           <Reveal>
             <article className="glass-card h-full rounded-3xl p-6">
@@ -198,7 +198,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-a">
         <div className="container-shell">
           <h2 className="font-display text-3xl md:text-4xl">{homeExperience.testimonials.title}</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -221,7 +221,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
 
       <GallerySplitTabs content={homeExperience.gallerySplit} />
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell">
           <div className="mb-7 flex items-end justify-between gap-4">
             <h2 className="font-display text-3xl md:text-4xl">{dict.gallery.title}</h2>
@@ -247,7 +247,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section id="home-location" className="section-pad border-y border-[var(--border)] bg-[#10171e]/45">
+      <section id="home-location" className="section-pad section-bg-c border-y border-[var(--border)]">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <Reveal>
             <article className="glass-card rounded-3xl p-7">
@@ -263,7 +263,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-a">
         <div className="container-shell grid gap-4 md:grid-cols-2">
           <article className="glass-card rounded-2xl p-6">
             <h3 className="font-display text-2xl">{homeExperience.micro.popularTimes.title}</h3>
@@ -276,7 +276,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section id="home-faq">
+      <section id="home-faq" className="section-bg-b">
         <FaqAccordion title={homeExperience.faq.title} items={homeExperience.faq.items} />
       </section>
 

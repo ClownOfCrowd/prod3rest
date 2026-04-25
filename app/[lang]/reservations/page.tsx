@@ -17,7 +17,7 @@ export default async function ReservationsPage({
   const dict = await getDictionary(lang);
 
   return (
-    <section className="section-pad">
+    <section className="section-pad section-bg-b">
       <div className="container-shell grid gap-8 lg:grid-cols-[1fr_1.05fr] lg:items-start">
         <Reveal>
           <div>

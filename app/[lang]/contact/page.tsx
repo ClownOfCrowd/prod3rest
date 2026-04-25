@@ -19,14 +19,14 @@ export default async function ContactPage({
 
   return (
     <>
-      <section className="section-pad border-b border-[var(--border)]">
+      <section className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell">
           <h1 className="font-display text-4xl md:text-5xl">{dict.contact.title}</h1>
           <p className="mt-4 max-w-xl text-[var(--muted)]">{dict.contact.subtitle}</p>
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell grid gap-6 md:grid-cols-2">
           <article className="glass-card rounded-2xl p-6">
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
@@ -47,7 +47,7 @@ export default async function ContactPage({
         </div>
       </section>
 
-      <section className="section-pad border-y border-[var(--border)] bg-[#101821]/45">
+      <section className="section-pad section-bg-c border-y border-[var(--border)]">
         <div className="container-shell grid gap-6 md:grid-cols-2">
           <article className="glass-card rounded-2xl p-6">
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">

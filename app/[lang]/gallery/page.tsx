@@ -27,14 +27,14 @@ export default async function GalleryPage({
 
   return (
     <>
-      <section className="section-pad border-b border-[var(--border)]">
+      <section className="section-pad section-bg-a border-b border-[var(--border)]">
         <div className="container-shell">
           <h1 className="font-display text-4xl md:text-5xl">{dict.gallery.title}</h1>
           <p className="mt-4 max-w-2xl text-[var(--muted)]">{dict.gallery.subtitle}</p>
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad section-bg-b">
         <div className="container-shell grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {dict.gallery.items.map((caption, index) => (
             <Reveal key={caption} delay={index * 80}>

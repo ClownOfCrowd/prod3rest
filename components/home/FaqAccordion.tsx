@@ -14,7 +14,7 @@ export default function FaqAccordion({
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="section-pad border-t border-[var(--border)]">
+    <section className="section-pad section-bg-b border-t border-[var(--border)]">
       <div className="container-shell">
         <h2 className="font-display text-3xl md:text-4xl">{title}</h2>
         <div className="mt-6 space-y-3">

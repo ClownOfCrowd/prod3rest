@@ -22,7 +22,7 @@ export default function GallerySplitTabs({ content }: { content: SplitContent })
   const [tab, setTab] = useState<Tab>("food");
 
   return (
-    <section className="section-pad border-y border-[var(--border)] bg-[#10171d]/55">
+    <section className="section-pad section-bg-c border-y border-[var(--border)]">
       <div className="container-shell">
         <h2 className="font-display text-3xl md:text-4xl">{content.title}</h2>
         <div className="mt-5 flex w-full gap-2 overflow-x-auto">
