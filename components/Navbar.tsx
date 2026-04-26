@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { type MouseEvent, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import type { Dictionary } from "@/lib/dictionaries";
@@ -28,6 +28,17 @@ export default function Navbar({
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const hardNavigate = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    event.preventDefault();
+    setOpen(false);
+    document.body.style.overflow = "";
+    document.body.classList.remove("mobile-menu-open");
+    window.location.assign(href);
+  };
+
   useEffect(() => {
     const body = document.body;
 
@@ -51,6 +62,7 @@ export default function Navbar({
       <div className="container-shell flex h-20 items-center justify-between gap-4">
         <Link
           href={`/${locale}`}
+          onClick={(event) => hardNavigate(event, `/${locale}`)}
           className="font-display text-2xl tracking-[0.12em] text-[var(--foreground)]"
         >
           {dict.brand}
@@ -65,6 +77,7 @@ export default function Navbar({
               <Link
                 key={link.key}
                 href={href}
+                onClick={(event) => hardNavigate(event, href)}
                 className={`nav-link ${
                   active ? "text-[var(--accent)]" : "text-[var(--muted)] hover:text-white"
                 }`}
@@ -113,7 +126,7 @@ export default function Navbar({
                 key={link.key}
                 href={`/${locale}${link.href}`}
                 className="rounded-xl border border-[var(--border)] px-4 py-3 text-[var(--foreground)]"
-                onClick={() => setOpen(false)}
+                onClick={(event) => hardNavigate(event, `/${locale}${link.href}`)}
               >
                 {dict.nav[link.key]}
               </Link>
